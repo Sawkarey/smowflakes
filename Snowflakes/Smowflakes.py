@@ -1,10 +1,12 @@
+# created a project based on a task using simple_draw library
+
 import simple_draw as sd
 
 N = 20
 sd.resolution = (1200, 600)
 snowflakes_param, fallen = [], []
 
-
+# created started list of snowflakes
 def flake_add(param, N):
     for i in range(N):
         x = sd.random_number(100, 1200)
@@ -16,6 +18,7 @@ def flake_add(param, N):
 flake_add(snowflakes_param, 40)
 
 
+# implementation
 def snowflake():
     ground_level = 50
     k = 0
